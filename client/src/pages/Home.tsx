@@ -50,7 +50,7 @@ export default function Home() {
         <div className="lg:col-span-5 pt-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent-foreground text-sm font-semibold mb-6 border border-accent/20">
             <BrainCircuit className="w-4 h-4 text-accent" />
-            NVIDIA VSS Powered
+            Powered by NVIDIA VSS Blueprint and Cosmos-Reason-2
           </div>
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-primary leading-tight mb-6">
             Transform video <br/> into challenging <br/> <span className="text-accent italic">assessments.</span>
