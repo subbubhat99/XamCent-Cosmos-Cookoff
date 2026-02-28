@@ -9,6 +9,7 @@ import { z } from "zod";
 
 // VSS endpoint configuration
 const VSS_ENDPOINT = process.env.VSS_ENDPOINT || "http://localhost:9100";
+const VSS_API_KEY = process.env.VSS_API_KEY;
 
 async function generateExam(
   examId: number, 
@@ -32,11 +33,17 @@ async function generateExam(
 
     console.log("Calling VSS with payload:", vssPayload);
 
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json',
+    };
+
+    if (VSS_API_KEY) {
+      headers['X-API-Key'] = VSS_API_KEY;
+    }
+
     const response = await fetch(`${VSS_ENDPOINT}/api/generate-exam`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers,
       body: JSON.stringify(vssPayload),
       signal: AbortSignal.timeout(120000) // 2 minute timeout for video processing
     });
@@ -64,7 +71,8 @@ async function generateExam(
   } catch (error) {
     console.error("Exam generation failed:", error);
     await storage.updateExam(examId, { 
-      status: "failed"
+      status: "failed",
+      // error: error instanceof Error ? error.message: "Unknown error."
     });
   }
 }
