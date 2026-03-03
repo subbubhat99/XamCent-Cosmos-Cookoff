@@ -1,2 +1,3 @@
-# XamCent-Generating educational assessments using NVIDIA VSS-Blueprint and Cosmos-Reason2
+#<h1 align="center">XamCent</h1>
+
 Submission for the Cosmos-Cookoff-Challenge
