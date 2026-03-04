@@ -42,6 +42,24 @@ XamCent connects to the VSS blueprint module over the backend, via port 8100. As
 
 ### Deployment Steps
 
+1) Log in to NVIDIA Brev, find [this launchable](https://brev.nvidia.com/launchable/deploy/now?launchableID=env-2tYIjRXL4eMCbH9Az8mJC5WPAI4) and deploy the Crusoe 8 x L40S GPU instance that must run the blueprint. Please note the above link points to the GPU instance by Scaleway but the Crusoe VM configuration is recommended (and also the one used for XamCent-integration).
+2) Once the VM is built and running, open an Ubuntu terminal. In the root dir:
+
+```bash
+brev login # Login to your Brev account
+brev shell video-search-and-summarization-blueprint-1ee14a
+# brev port-forward video-search-and-summarization-blueprint-1ee14a -p 9999:8888
+
+```
+3) Once inside the running instance, the video_search_and_summarization folder should already be found in its root dir. Clone this repository and move the modified jupyter notebook to /video-search-and-summarization/deploy/ (the same directory as the default notebook).\
+
+```bash
+git clone https://github.com/subbubhat99/XamCent-Cosmos-Cookoff.git
+cd XamCent-Cosmos-Cookoff
+mv vss-xamcent-cookoff.ipynb ~/video-search-and-summarization/deploy/
+```
+
+
 
 #### Requirements
 
