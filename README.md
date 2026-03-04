@@ -72,6 +72,7 @@ and replace the ```caption ```, ```caption_summarization ```, and the ```summary
 #### Requirements
 1) Check the following [prerequisites](https://docs.nvidia.com/vss/latest/content/vss_dep_docker_compose_x86.html#quickstart-docker) are met.
 2) Install the brev-cli if not already.
+
 **Note** - HF_TOKEN and NGC_API_KEY of the participant are offered in the notebook. 
 
 ### Future Work
