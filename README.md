@@ -70,10 +70,10 @@ and replace the ```caption ```, ```caption_summarization ```, and the ```summary
 6) Once you see the VIA VSS server started and has port 8100 exposed in the backend and the UI available at port 9100, open XamCent at https://xam-cent-question-generator--subbubhat99.replit.app/ and try it out with a video recording stored locally or a URL to a tutorial video (not from YouTube though!)  
 
 #### Requirements
-1) Check the following [prerequisites](https://docs.nvidia.com/vss/latest/content/vss_dep_docker_compose_x86.html#quickstart-docker) are met.
-2) Install the brev-cli if not already.
 
-**Note** - HF_TOKEN and NGC_API_KEY of the participant are offered in the notebook. 
+1) Install the brev-cli if not already.
+2) Check the following [prerequisites](https://docs.nvidia.com/vss/latest/content/vss_dep_docker_compose_x86.html#quickstart-docker) are met.
+
 
 ### Future Work
 
