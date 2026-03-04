@@ -10,6 +10,11 @@
   <a href="#about">About</a>
 </p>
 
+<p align="center">
+  <img src="assets/xamcent-homepage.png" alt="XamCent Homepage" width="900" />
+</p>
+
+
 ### The Recipe
 XamCent is an interactive web-application built to leverage the power of video analytics and reasoning agents to generate question sets formatted adherent to global paper-setting standards, ready to be handed over to a class across any level of education, from kindergarten all the way to university. Using NVIDIA's video search and summarization (VSS) blueprint and Cosmos-Reason-2 with its video understanding capabilities, it captures key concepts taught from the input video tutorial or livestream and is able to generate an exam set with various question types, across three levels of difficulty. 
 
