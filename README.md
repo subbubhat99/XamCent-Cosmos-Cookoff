@@ -5,9 +5,7 @@
   <a href="#recipe">Recipe</a> |
   <a href="#working">Working</a> |
   <a href="#deployment-steps">Deployment Steps</a> |
-  <a href="#file-structure">File Structure</a> |
   <a href="#future-work">Future Work</a> |
-  <a href="#about">About</a>
 </p>
 
 <p align="center">
